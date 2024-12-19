@@ -1,0 +1,90 @@
+.sidebar {
+    background: #fff;
+    width: 15%;
+    height: calc(100vh - 80px); /* Adjusted height to fit within viewport minus navbar height */
+    position: fixed;
+    top: 80px; /* Adjusted top position to avoid overlapping with navbar */
+    left: 0;
+    padding-left: 2%;
+    box-sizing: border-box;
+    overflow-y: auto; /* Add scrollbar if content exceeds height */
+}
+
+.shortcut-links img {
+    width: 20px;
+    margin-right: 10px; /* Reduced margin for tighter spacing */
+}
+
+.side-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Reduced margin for tighter spacing */
+    cursor: pointer;
+}
+
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 85%;
+    margin: 10px 0; /* Adjusted margin for spacing */
+}
+
+.subscribed-list h3 {
+    font-size: 13px;
+    margin: 10px 0; /* Adjusted margin for spacing */
+    color: #5a5a5a;
+}
+
+.subscribed-list img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px; /* Adjusted margin for spacing */
+}
+
+.side-link{
+    display : flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+}
+.sidebar hr{
+    border:0;
+    height:1px;
+    background:#ccc;
+    width:85%;
+}
+.subscribed-list h3 {
+    font-size: 13px;
+    margin: 10px 0; /* Adjusted margin for tighter spacing */
+    color: #5a5a5a;
+}
+
+.subscribed-list img {
+    width: 25px;
+    height: 25px; /* Set height to match width for circular effect */
+    border-radius: 50%;
+    margin-right: 10px; /* Adjusted margin for tighter spacing */
+}
+
+.small-sidebar{
+    width:5%;
+}
+.small-sidebar p{
+    display:none;
+}
+.small-sidebar h3{
+    display:none;
+}
+.small-sidebar hr{
+    width:50%;
+    margin-bottom:25px;
+}
+.side-link.active img{
+    padding-bottom:2px;
+    border-bottom:3px solid red;
+}
